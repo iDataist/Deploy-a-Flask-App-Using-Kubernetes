@@ -15,4 +15,4 @@ RUN pip install --no-cache-dir --upgrade pip &&\
 EXPOSE 80
 
 # Run app.py at container launch
-CMD ["python", "app.py"]
+ENTRYPOINT ["gunicorn", "-b", ":8080", "app:app"]
