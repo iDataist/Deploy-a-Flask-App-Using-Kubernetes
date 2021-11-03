@@ -1,6 +1,0 @@
-Port: 80
-{
-  "prediction": [
-    1
-  ]
-}
