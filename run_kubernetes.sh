@@ -10,9 +10,6 @@ dockerpath=hwdgrmy/api
 # Run the Docker Hub container with kubernetes
 kubectl run --image=$dockerpath apipod --labels app=api
 
-# kubectl create deployment --image=python python-app
-# kubectl run --image=$dockerpath python-app --labels app=api
-
 # Step 3:
 # List kubernetes pods
 kubectl get pods
