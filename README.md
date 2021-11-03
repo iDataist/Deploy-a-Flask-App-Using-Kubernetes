@@ -1,5 +1,4 @@
-<include a CircleCI status badge, here>
-
+[![CircleCI](https://circleci.com/gh/idataist/p4.svg?style=svg)](https://github.com/idataist/p4/tree/master)
 ## Project Overview
 
 In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
