@@ -1,5 +1,11 @@
-2021-11-03 16:25:59,155 WARNING  * Running on all addresses.
+hren$ kubectl logs apipod
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
    WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+2021-11-03 16:25:59,155 WARNING  * Running on all addresses.
+WARNING: This is a development server. Do not use it in a production deployment.
 2021-11-03 16:25:59,156 INFO  * Running on http://10.106.28.168:80/ (Press CTRL+C to quit)
 2021-11-03 16:25:59,163 INFO  * Restarting with stat
 2021-11-03 16:25:59,679 WARNING  * Debugger is active!
