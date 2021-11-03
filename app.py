@@ -124,16 +124,14 @@ def predict():
     """
 
     try:
-        logger.info("JSON payload: %s json_payload")
         clf = joblib.load("model.joblib")
     except Exception as e:
         logger.error(e)
         return "Model not loaded"
 
     json_payload = request.json
-    logger.info("JSON payload: %s json_payload")
+    logger.info(f"JSON payload: {json_payload}")
     inference_payload = pd.DataFrame(json_payload)
-    logger.info("inference payload DataFrame: %s inference_payload")
     prediction = list(clf.predict(inference_payload))
     prediction = [int(x) for x in prediction]
     logger.info(f"prediction: {prediction}")
