@@ -16,7 +16,7 @@ logger = logging.getLogger()
 
 @app.route("/")
 def home():
-    html = "<h3>Credit Card Fraud Detection Home</h3>"
+    html = "<h3>Model Prediction Home</h3>"
     return html.format(format)
 
 
@@ -136,6 +136,7 @@ def predict():
     logger.info("inference payload DataFrame: %s inference_payload")
     prediction = list(clf.predict(inference_payload))
     prediction = [int(x) for x in prediction]
+    logger.info(f"prediction: {prediction}")
     return jsonify({"prediction": prediction})
 
 
