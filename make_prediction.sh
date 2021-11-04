@@ -1,4 +1,4 @@
-PORT=80
+PORT=5000
 echo "Port: $PORT"
 
 # POST method predict
