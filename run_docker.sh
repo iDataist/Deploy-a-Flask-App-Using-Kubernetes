@@ -10,4 +10,5 @@ docker image ls
 
 # Step 3:
 # Run flask app
+# exposed container port (80): flask app port (5000)
 docker run -p 80:5000 api
