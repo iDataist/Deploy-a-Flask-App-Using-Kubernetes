@@ -8,7 +8,7 @@ dockerpath=hwdgrmy/api
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run apipod3 --image=$dockerpath --port=80
+kubectl run apipod --image=$dockerpath --port=80
 
 # Step 3:
 # List kubernetes pods
@@ -18,3 +18,6 @@ kubectl get pods
 # Forward the container port to a host
 # exposed container port (80): flask app port (5000)
 kubectl port-forward --address 0.0.0.0 apipod 80:5000
+
+# kubectl delete pod <POD NAME>
+# kubectl logs <POD NAME>
